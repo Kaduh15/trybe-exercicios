@@ -13,7 +13,7 @@ for (let i = 49; i >= 0; i -= 2) {
         }
     }
 
-    if (divisiveis === 2 & i > maiorNumeroPrimo) {
+    if (divisiveis === 2 && i > maiorNumeroPrimo) {
 
         maiorNumeroPrimo = i;
 
