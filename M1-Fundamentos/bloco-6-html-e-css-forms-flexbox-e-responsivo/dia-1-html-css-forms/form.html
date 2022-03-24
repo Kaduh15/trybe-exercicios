@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Viagem</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Concorra a uma Viagem</h1>
+        </header>
+        <form action="#">
+            <label for="input-nome">Nome: <input type="text" minlength="10" maxlength="40"></label>
+            <label for="input-email">Email: <input type="email" minlength="10" maxlength="50"></label>
+            <div>
+                <h2>Destinos</h2>
+                <label for="radio-cidade">
+                    <input type="radio" name="destino" id="radio-cidade" >Cidade
+                </label>
+                <label for="radio-campo">
+                    <input type="radio" name="destino" id="radio-campo">campo
+                </label>
+                <label for="radio-praia">
+                    <input type="radio" name="destino" id="radio-praia">Praia
+                </label>
+                <label for="radio-montanha">
+                    <input type="radio" name="destino" id="radio-montanha">Montanha
+                </label>
+            </div>
+    
+            <div>
+                <label for="respota">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+                    <textarea name="resposta" id="respota" cols="30" rows="10" minlength="500"></textarea>
+                </label>
+                <br>
+                <label for="data">Data:
+                    <input type="date" name="data" id="data">
+                </label>
+                <br>
+                <label for="concordo1">
+                    <input type="checkbox" name="concordo1" id="concordo1">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+                <br>
+                <label for="concordo2">
+                    <input type="checkbox" name="concordo2" id="concordo2">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="Apagar">Apagar</button>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
