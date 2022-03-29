@@ -3,36 +3,43 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu';
-  }
-  
-  body {
+}
+
+body {
     background-color: rgb(247, 247, 247);
-  }
-  
-  .header-container {
+}
+
+.header-container {
     background-color: #5C687C;
     display: flex;
-  }
-  
-  .logo-container {
+}
+
+
+.logo-container {
     display: flex;
+    min-width: 268px;
     justify-content: center;
-  }
-  
-  .menu-container {
+    order: 1;
+}
+
+.menu-container {
     display: flex;
-  }
-  
-  .menu-container ul {
+    order: 2;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.menu-container ul {
+    min-width: 500px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-  }
-  
-  .menu-container li {
+}
+
+.menu-container li {
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
-  }
+}
