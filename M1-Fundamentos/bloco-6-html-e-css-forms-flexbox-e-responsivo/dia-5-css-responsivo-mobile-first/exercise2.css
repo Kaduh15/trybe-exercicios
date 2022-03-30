@@ -58,7 +58,7 @@ header nav ul li {
 /* article */
 
 article {
-   margin: 100px;
+   margin: 100px 100px 0 100px;
    border-top: 3px solid gray;
    border-bottom: 3px solid gray;
    border-radius: 20px;
@@ -72,4 +72,22 @@ article h1 {
 article p {
     margin: 10px;
     font-size: 20px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding: 60px 0;
+    background-color: rgb(92, 40, 134);
+    color: aliceblue;
+}
+
+footer p {
+    width: 60%;
+    margin-top: 15px;
 }
