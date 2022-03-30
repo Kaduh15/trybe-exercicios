@@ -55,3 +55,21 @@ header nav ul li {
     order: 2;
 }
 
+/* article */
+
+article {
+   margin: 100px;
+   border-top: 3px solid gray;
+   border-bottom: 3px solid gray;
+   border-radius: 20px;
+   padding: 0 35px 35px 35px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p {
+    margin: 10px;
+    font-size: 20px;
+}
