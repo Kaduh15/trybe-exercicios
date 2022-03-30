@@ -14,6 +14,7 @@ html {
 
 /* Layout  Grande*/
 
+/* Header */
 header {
     background-color: blueviolet;
     margin: 0;
@@ -39,5 +40,18 @@ header nav ul{
 
 header nav ul li {
     list-style: none;
+}
+
+/* Asides */
+
+.asides {
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asides .aside-one {
+    order: 2;
 }
 
