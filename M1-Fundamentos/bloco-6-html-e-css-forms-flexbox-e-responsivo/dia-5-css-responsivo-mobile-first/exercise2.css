@@ -1,9 +1,43 @@
 html {
     box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
-  /* Layout  Grande*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Layout  Grande*/
+
+header {
+    background-color: blueviolet;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    color: aliceblue;
+}
+
+header p {
+    font-size: 25px;
+}
+
+header nav {
+    flex-basis: 30%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
