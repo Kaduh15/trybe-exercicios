@@ -1,4 +1,5 @@
-const books = [{
+const books = [
+  {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
     genre: 'Fantasia',
@@ -60,48 +61,35 @@ const books = [{
   },
 ];
 
-// 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
-// Dica: use as funções map , sort
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+// Dica: use as funções filter e sort
 
-const expectedResult = [{
-    age: 31,
-    author: 'Isaac Asimov',
+const expectedResult = [
+  {
+    id: 6,
+    name: 'O Chamado de Cthulhu',
+    genre: 'Terror',
+    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+    releaseYear: 1928,
   },
   {
-    age: 38,
-    author: 'H. P. Lovecraft',
+    id: 3,
+    name: 'Fundação',
+    genre: 'Ficção Científica',
+    author: { name: 'Isaac Asimov', birthYear: 1920 },
+    releaseYear: 1951,
   },
   {
-    age: 39,
-    author: 'Stephen King',
-  },
-  {
-    age: 43,
-    author: 'George R. R. Martin',
-  },
-  {
-    age: 45,
-    author: 'Frank Herbert',
-  },
-  {
-    age: 62,
-    author: 'J. R. R. Tolkien',
+    id: 2,
+    name: 'O Senhor dos Anéis',
+    genre: 'Fantasia',
+    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+    releaseYear: 1954,
   },
 ];
 
-function nameAndAge() {
-  const authorList = books.map((book) => {
-    return {
-      age: book.releaseYear - book.author.birthYear,
-      author: book.author.name,
-    }
-  });
-
-  authorList.sort((a, b) => a.age - b.age)
-
-  return authorList
-
-
+function oldBooksOrdered() {
+  // escreva seu código aqui
 }
 
-console.log(nameAndAge());
+console.log(oldBooksOrdered);
