@@ -10,7 +10,7 @@ function flatten() {
   console.log(arrays);
   return arrays.reduce((arrayAtual, array) => {
     arrayAtual
-  }, [])
+  })
 }
 
 console.log(flatten());
