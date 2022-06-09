@@ -34,7 +34,7 @@ const reducer = (state = INITIAL_STATE, action) => {
     case 'RANDOM_COLOR':
       return {
         ...state,
-        colors: state.colors.map(() => criarCor()),
+        colors: [...state.colors, criarCor()],
       };
       break;
     default:
