@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Layout  Grande*/
+
+/* Header */
+header {
+    background-color: blueviolet;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    color: aliceblue;
+}
+
+header p {
+    font-size: 25px;
+}
+
+header nav {
+    flex-basis: 30%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+/* Asides */
+
+.asides {
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asides .aside-one {
+    order: 2;
+}
+
+/* article */
+
+article {
+   margin: 100px 100px 0 100px;
+   border-top: 3px solid gray;
+   border-bottom: 3px solid gray;
+   border-radius: 20px;
+   padding: 0 35px 35px 35px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    padding: 60px 0;
+    background-color: rgb(92, 40, 134);
+    color: aliceblue;
+}
+
+footer p {
+    width: 60%;
+    margin-top: 15px;
+}
