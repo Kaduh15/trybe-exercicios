@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Viagem</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styler.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 >Concorra a uma Viagem</h1>
+        </header>
+        <form action="#" class="form container">
+            <label class="form-label" for="input-nome">Nome:</label>
+            <input class="form-control" type="text" minlength="10" maxlength="40">
+            <label class="form-label" for="input-email">Email:</label>
+            <input class="form-control" type="email" minlength="10" maxlength="50">
+            <div>
+                <h2>Destinos</h2>
+                <label class="form-label form-check-label" for="radio-cidade">
+                    <input class="form-check-input" type="radio" name="destino" id="radio-cidade" >Cidade
+                </label>
+                <label class="form-label form-check-label" for="radio-campo">
+                    <input class="form-check-input" type="radio" name="destino" id="radio-campo">campo
+                </label>
+                <label class="form-label form-check-label" for="radio-praia">
+                    <input class="form-check-input" type="radio" name="destino" id="radio-praia">Praia
+                </label>
+                <label class="form-label form-check-label" for="radio-montanha">
+                    <input class="form-check-input" type="radio" name="destino" id="radio-montanha">Montanha
+                </label>
+            </div>
+    
+            <div>
+                <label class="form-label" for="respota">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+                    <br>
+                    <textarea name="resposta" id="respota" cols="64" rows="10" minlength="500"></textarea>
+                </label>
+                <br>
+                <label class="form-label" for="data">Data:
+                    <input class="form-control" type="date" name="data" id="data">
+                </label>
+                <br>
+                <label class="form-label form-check-label" for="concordo1">
+                    <input class="form-check-label" type="checkbox" name="concordo1" id="concordo1">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+                <br>
+                <label class="form-label form-check-label" for="concordo2">
+                    <input class="form-check-label" type="checkbox" name="concordo2" id="concordo2">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+            <button class="btn btn-success" type="submit" id="enviar">Enviar</button>
+            <button class="btn btn-outline-danger" type="reset" id="Apagar">Apagar</button>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
